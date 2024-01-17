@@ -39,6 +39,10 @@ dependencies:
   flutter_native_splash: ^2.3.9
   #local database 
   shared_preferences: ^2.2.2
+  #for making the app responsive
+  flutter_screenutil: ^5.9.0
+  # for reading the svg amges
+  flutter_svg: ^2.0.9
   flutter:
     sdk: flutter
 
