@@ -1,19 +1,15 @@
 import 'package:docapp/Features/on_Boarding/presentation/view/views/on_boardingScreen.dart';
+import 'package:docapp/core/routings/routes.dart';
 import 'package:flutter/material.dart';
 
+
 class AppRouter {
-  Route genertRouter(RouteSettings settings) {
+  Route generateRouter(RouteSettings settings) {
     switch (settings.name) {
-      case '/':
+      case Routes.onBoardingScreen:
         return MaterialPageRoute(builder: (_) {
-          return const Placeholder();
+          return const OnBoardingScreen();
         });
-      case '/onboardingscreen':
-        return MaterialPageRoute(
-          builder: (_) {
-            return const OnBoardingScreen();
-          },
-        );
       default:
         return MaterialPageRoute(
           builder: (context) => const Center(
