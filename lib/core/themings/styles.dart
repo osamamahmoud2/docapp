@@ -13,8 +13,8 @@ class Fontstyles {
     fontSize: 32.0.sp,
     fontWeight: FontWeight.w700,
   );
-  static TextStyle font13black400weight = TextStyle(
-    color: Colors.black,
+  static TextStyle font13grey400weight = TextStyle(
+    color: ColorsManger.grey,
     fontSize: 13.sp,
     fontWeight: FontWeight.w400,
   );

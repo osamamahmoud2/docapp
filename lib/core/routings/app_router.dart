@@ -1,3 +1,4 @@
+import 'package:docapp/Features/home/presentation/view/Views/home_screen.dart';
 import 'package:docapp/Features/on_Boarding/presentation/view/views/on_boardingScreen.dart';
 import 'package:docapp/core/routings/routes.dart';
 import 'package:flutter/material.dart';
@@ -8,6 +9,10 @@ class AppRouter {
       case Routes.onBoardingScreen:
         return MaterialPageRoute(builder: (_) {
           return const OnBoardingScreen();
+        });
+      case Routes.homeScreen:
+        return MaterialPageRoute(builder: (_) {
+          return const HomeScreen();
         });
       default:
         return MaterialPageRoute(
