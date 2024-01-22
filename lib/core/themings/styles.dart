@@ -23,4 +23,24 @@ class Fontstyles {
     fontSize: 16.sp,
     fontWeight: FontWeight.w600,
   );
+  static TextStyle font24PrimartColor700weight = TextStyle(
+    color: ColorsManger.primaryColor,
+    fontSize: 24.sp,
+    fontWeight: FontWeight.w700,
+  );
+  static TextStyle font15grey400weight = TextStyle(
+    color: ColorsManger.grey,
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle font12primaryColor400weight = TextStyle(
+    color: ColorsManger.primaryColor,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle font11clamgrey400weight = TextStyle(
+    color: ColorsManger.calmlighetergrey,
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w400,
+  );
 }
