@@ -16,13 +16,14 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+ 
   #as state mangement
   flutter_bloc: ^8.1.3
   #freezed genrate Api service
   freezed: ^2.4.6
   #freezed anotation
   freezed_annotation: ^2.4.1
-  #service locator
+  #service locator dependency injection
   get_it: ^7.6.6
   #json annotaion
   json_annotation: ^4.8.1
@@ -32,7 +33,8 @@ dependencies:
   dio: ^5.4.0
   #retrofit.dart is an dio client generator using source_gen and inspired by Chopper and Retrofit.
   retrofit: ^4.0.3
-  #localization
+  retrofit_generator: ^8.0.6
+  #localization team
   intl: ^0.18.1
   easy_localization: ^3.0.3
   #flutter native splash
@@ -43,17 +45,23 @@ dependencies:
   flutter_screenutil: ^5.9.0
   # for reading the svg amges
   flutter_svg: ^2.0.9
+  # for building files auto generating like file with Json Serialization and Retrofit
+  build_runner: ^2.4.8
+  # emulator previewer 
+  device_preview: ^1.1.0
+  # Logging Requsest for Dio
+  pretty_dio_logger: ^1.3.1
+  
+
   flutter:
     sdk: flutter
-
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+    #generate retrofit file
+  
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

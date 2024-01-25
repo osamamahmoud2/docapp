@@ -1,5 +1,5 @@
-import 'package:docapp/Features/home/presentation/view/widgets/text_forget_password.dart';
-import 'package:docapp/Features/home/presentation/view/widgets/text_terms_andConditions.dart';
+import 'package:docapp/Features/login/presentation/view/widgets/text_forget_password.dart';
+import 'package:docapp/Features/login/presentation/view/widgets/text_terms_andConditions.dart';
 import 'package:docapp/core/helpers/spaces.dart';
 import 'package:docapp/core/themings/colors.dart';
 import 'package:docapp/core/themings/styles.dart';
