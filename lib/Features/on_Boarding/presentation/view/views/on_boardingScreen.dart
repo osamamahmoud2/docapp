@@ -39,7 +39,7 @@ class OnBoardingScreen extends StatelessWidget {
             ),
             CustomButton(
               onPressed: () {
-                Navigator.pushNamed(context, Routes.homeScreen);
+                Navigator.pushNamed(context, Routes.loginScreen);
               },
               text: 'Get Started',
             )

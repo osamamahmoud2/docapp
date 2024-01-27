@@ -6,11 +6,8 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    DevicePreview(
-      enabled: !kReleaseMode,
-      builder: (context) => DocApp(
-        appRouter: AppRouter(),
-      ), 
+    DocApp(
+      appRouter: AppRouter(),
     ),
   );
 }

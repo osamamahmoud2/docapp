@@ -12,6 +12,7 @@ class AppTextFromField extends StatelessWidget {
     this.focusedBorderradius,
     this.obscureText,
     this.suffixIcon,
+    this.controller,
   });
   final Widget? suffixIcon;
   final BorderRadius? enabledBorderradius;
@@ -21,10 +22,17 @@ class AppTextFromField extends StatelessWidget {
   final String hintText;
   final TextStyle? hintStyle;
   final bool? obscureText;
+  final TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
+      validator: (value) {
+        if (value!.isEmpty) {
+          return '$hintText is Required"';
+        }
+      },
       decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
             borderRadius: enabledBorderradius ?? BorderRadius.circular(16),
@@ -39,10 +47,12 @@ class AppTextFromField extends StatelessWidget {
             ),
           ),
           hintText: hintText,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
           hintStyle:
               hintStyle ?? const TextStyle(color: ColorsManger.lightGray),
           suffixIcon: suffixIcon,
-        
           fillColor: ColorsManger.morelightergrey,
           filled: true),
       obscureText: obscureText ?? false,
