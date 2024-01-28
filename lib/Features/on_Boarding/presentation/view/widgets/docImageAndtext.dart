@@ -1,4 +1,5 @@
 import 'package:docapp/core/themings/styles.dart';
+import 'package:docapp/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -26,12 +27,11 @@ class DocImageAndText extends StatelessWidget {
           right: 30.w,
           left: 30.w,
           child: Text(
-            'Best Doctor Appointment App',
+            S.of(context).BestDoctorAppointment,
             style: Fontstyles.font32maincolor700weight,
             textAlign: TextAlign.center,
           ),
         ),
-      
       ],
     );
   }

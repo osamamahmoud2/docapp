@@ -1,0 +1,23 @@
+{
+    "WelcomeBack": "Welcome Back",
+    "LoginPageText": "We're excited to have you back, can't wait to see what you've been up to since you last logged in.",
+    "AppName": "Docdoc",
+    "email": "Email",
+    "Byloggingyouagreetoour": "By logging, you agree to our",
+    "TermsConditions": " Terms & Conditions",
+    "and": " and ",
+    "PrivacyPolicy": "PrivacyPolicy.",
+    "Donothaveanaccountyet": "Do not have an account yet?",
+    "SignUp": " Sign Up",
+    "password": "password",
+    "Login": "Login",
+    "name": "Name ",
+    "phone": "phone Number",
+    "comfirmPassword":"password confirmation",
+    "Forgetpassword": "Forget password",
+    "BestDoctorAppointment": "Best Doctor Appointment App",
+    "onBoardinAppDescription": "Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.",
+    "onBoardingButtonText": "Get Started",
+    "CreateAcount": "Create Account",
+    "SignUpPageText": "Sign up now and start exploring all that our app has to offer. We're excited to welcome you to our community!"
+}

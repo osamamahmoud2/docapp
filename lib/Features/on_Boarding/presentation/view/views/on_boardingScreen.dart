@@ -3,6 +3,7 @@ import 'package:docapp/Features/on_Boarding/presentation/view/widgets/docLogoAnd
 import 'package:docapp/core/routings/routes.dart';
 import 'package:docapp/core/themings/styles.dart';
 import 'package:docapp/core/widgets/custom_Button.dart';
+import 'package:docapp/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -29,7 +30,7 @@ class OnBoardingScreen extends StatelessWidget {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 30.w),
               child: Text(
-                'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
+                S.of(context).onBoardinAppDescription,
                 style: Fontstyles.font13grey400weight,
                 textAlign: TextAlign.center,
               ),
@@ -41,7 +42,7 @@ class OnBoardingScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, Routes.loginScreen);
               },
-              text: 'Get Started',
+              text: S.of(context).onBoardingButtonText,
             )
           ],
         ),

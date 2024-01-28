@@ -5,8 +5,10 @@ import 'package:docapp/core/helpers/spaces.dart';
 import 'package:docapp/core/routings/routes.dart';
 import 'package:docapp/core/themings/colors.dart';
 import 'package:docapp/core/themings/styles.dart';
+import 'package:docapp/core/widgets/Custom_Loading_Indicator.dart';
 import 'package:docapp/core/widgets/app_text_from_feild.dart';
 import 'package:docapp/core/widgets/custom_Button.dart';
+import 'package:docapp/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
@@ -49,25 +51,40 @@ class _HomeScreenState extends State<LoginScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Welcome Back",
+                        S.of(context).WelcomeBack,
                         style: Fontstyles.font24PrimartColor700weight,
                       ),
                       verticalspace(8),
-                      Text(
-                          "We're excited to have you back, can't wait to see what you've been up to since you last logged in.",
+                      Text(S.of(context).LoginPageText,
                           style: Fontstyles.font15grey400weight),
                       verticalspace(36),
                       Form(
                         key: formkey,
                         child: Column(children: [
                           AppTextFromField(
+                            validator: (value) {
+                              if (value!.isEmpty) {
+                                return 'Email is Required';
+                              } else if (!value.contains("@")) {
+                                return 'Enter Correct Email like *****@example.com';
+                              }
+                              return null;
+                            },
                             controller: emailController,
-                            hintText: 'Email',
+                            hintText: S.of(context).email,
                           ),
                           verticalspace(16),
                           AppTextFromField(
+                            validator: (value) {
+                              if (value!.isEmpty) {
+                                return 'password is Required';
+                              } else if (value.length < 8) {
+                                return 'Minimum 8 characters';
+                              }
+                              return null;
+                            },
                             controller: passwordController,
-                            hintText: "password",
+                            hintText: S.of(context).password,
                             obscureText: obscureText,
                             suffixIcon: GestureDetector(
                               onTap: () {
@@ -86,21 +103,15 @@ class _HomeScreenState extends State<LoginScreen> {
                           Align(
                             alignment: AlignmentDirectional.centerEnd,
                             child: Text(
-                              "Forget password",
+                              S.of(context).Forgetpassword,
                               style: Fontstyles.font12primaryColor400weight,
                             ),
                           ),
                           verticalspace(41),
                           state is LoginLoading
-                              ? Center(
-                                  child: LoadingAnimationWidget.twistingDots(
-                                    leftDotColor: ColorsManger.grey,
-                                    rightDotColor: ColorsManger.primaryColor,
-                                    size: 26,
-                                  ),
-                                )
+                              ? const CustomLoadingIndicator()
                               : CustomButton(
-                                  text: "Login",
+                                  text: S.of(context).Login,
                                   onPressed: () {
                                     if (formkey.currentState!.validate()) {
                                       cubit.doLogin(emailController.text,

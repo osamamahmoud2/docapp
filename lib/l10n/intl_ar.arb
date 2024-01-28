@@ -1,0 +1,23 @@
+{
+    "WelcomeBack": "مرحبا بعودتك",
+    "LoginPageText": "يسعدنا عودتك، لا يسعنا الانتظار لنرى ما الذي كنت تفعله منذ آخر تسجيل دخول لك.",
+    "AppName": "دوك دوك",
+    "email": "البريد الإلكتروني",
+    "Byloggingyouagreetoour": "بتسجيل الدخول، فإنك توافق على ",
+    "TermsConditions": "الأحكام والشروط",
+    "and": " و ",
+    "PrivacyPolicy": "سياسة الخصوصية.",
+    "Donothaveanaccountyet": "ليس لديك حساب بعد؟",
+    "SignUp": " انشاء حساب ",
+    "password": "كلمة المرور",
+    "Login": "تسجيل الدخول",
+    "name": "الاسم",
+    "phone": "رقم الهاتف",
+    "comfirmPassword": "تأكيد كلمة المرور",
+    "Forgetpassword": "نسيت كلمة المرور",
+    "BestDoctorAppointment": "أفضل تطبيق لحجز مواعيد الأطباء",
+    "onBoardinAppDescription": "يمكنك بسهولة إدارة وتحديد جميع مواعيدك الطبية مع دوك دوك للحصول على تجربة جديدة.",
+    "onBoardingButtonText": "ابدأ الآن",
+    "CreateAcount": "إنشاء حساب",
+    "SignUpPageText": "قم بالتسجيل الآن وابدأ في استكشاف كل ما يقدمه تطبيقنا. يسعدنا الترحيب بك في مجتمعنا!"
+}
