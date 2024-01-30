@@ -14,7 +14,7 @@ class Apiservice {
 
       var postResponse = jsonDecode(response.body);
       return postResponse;
-    } on Exception catch (e) {
+    } catch (e) {
       if (e is TimeoutException) {
         return "Check Your Internet Connection";
       }

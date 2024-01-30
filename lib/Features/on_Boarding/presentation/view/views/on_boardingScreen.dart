@@ -1,15 +1,22 @@
 import 'package:docapp/Features/on_Boarding/presentation/view/widgets/docImageAndtext.dart';
 import 'package:docapp/Features/on_Boarding/presentation/view/widgets/docLogoAndName.dart';
 import 'package:docapp/core/routings/routes.dart';
+import 'package:docapp/core/themings/colors.dart';
 import 'package:docapp/core/themings/styles.dart';
 import 'package:docapp/core/widgets/custom_Button.dart';
 import 'package:docapp/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_switch/flutter_switch.dart';
 
-class OnBoardingScreen extends StatelessWidget {
+class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});
 
+  @override
+  State<OnBoardingScreen> createState() => _OnBoardingScreenState();
+}
+
+class _OnBoardingScreenState extends State<OnBoardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

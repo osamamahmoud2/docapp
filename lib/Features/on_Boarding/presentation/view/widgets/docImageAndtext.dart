@@ -4,8 +4,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class DocImageAndText extends StatelessWidget {
+class DocImageAndText extends StatefulWidget {
   const DocImageAndText({super.key});
+
+  @override
+  State<DocImageAndText> createState() => _DocImageAndTextState();
+}
+
+class _DocImageAndTextState extends State<DocImageAndText> {
+  @override
+  void setState(VoidCallback fn) {
+    // TODO: implement setState
+    super.setState(fn);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +38,7 @@ class DocImageAndText extends StatelessWidget {
           right: 30.w,
           left: 30.w,
           child: Text(
-            S.of(context).BestDoctorAppointment,
+            S.current.BestDoctorAppointment,
             style: Fontstyles.font32maincolor700weight,
             textAlign: TextAlign.center,
           ),

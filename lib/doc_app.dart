@@ -17,7 +17,7 @@ class DocApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
-        locale: const Locale('en'),
+        locale: const Locale("en"),
         localizationsDelegates: const [
           S.delegate,
           GlobalMaterialLocalizations.delegate,
