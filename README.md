@@ -14,5 +14,9 @@
  ## Home Screen
 ![Screenshot_1705935530](https://github.com/osamamahmoud2/docapp/assets/140035818/9a25ab91-7c8d-49fa-b160-f6e3c11a66f2)
 
+## Sign Up Screen
+![Screenshot_1706740154](https://github.com/osamamahmoud2/docapp/assets/140035818/7d7352db-d584-4378-8df1-e4e9d8c27d83)
+
+
 
 
