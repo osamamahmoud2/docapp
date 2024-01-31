@@ -17,7 +17,7 @@ class ServerFailure extends Failures {
     } else if (exception is TimeoutException) {
       return ServerFailure("can't connect to the server right now!");
     } else {
-      return ServerFailure("Opps, There Was an error Please try again later!");
+      return ServerFailure("Opps, There Was an error Please try again later!.");
     }
   }
 }

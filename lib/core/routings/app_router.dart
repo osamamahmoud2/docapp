@@ -6,6 +6,7 @@ import 'package:docapp/Features/on_Boarding/presentation/view/views/on_boardingS
 import 'package:docapp/Features/sign_Up.dart/data/Repos/sign_up_Repo_Impl.dart';
 import 'package:docapp/Features/sign_Up.dart/presentation/controller/cubit/sign_up_cubit.dart';
 import 'package:docapp/Features/sign_Up.dart/presentation/view/views/sign_Up_Screen.dart';
+import 'package:docapp/core/DI/service_locator.dart';
 import 'package:docapp/core/networking/api_service.dart';
 import 'package:docapp/core/routings/routes.dart';
 import 'package:flutter/material.dart';
@@ -25,8 +26,9 @@ class AppRouter {
       case Routes.signUpScreen:
         return MaterialPageRoute(builder: (_) {
           return BlocProvider(
-            create: (context) =>
-                SignUpCubit(SignUpRepoImpl(apiservice: Apiservice())),
+            create: (context) => SignUpCubit(SignUpRepoImpl(
+              apiservice: getIt.get<Apiservice>(),
+            )),
             child: const SignUpScreen(),
           );
         });
@@ -34,7 +36,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) {
           return BlocProvider(
             create: (context) =>
-                LoginCubit(LoginRepoImpl(apiservice: Apiservice())),
+                LoginCubit(LoginRepoImpl(apiservice: getIt.get<Apiservice>())),
             child: const LoginScreen(),
           );
         });
